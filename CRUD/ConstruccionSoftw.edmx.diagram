@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36191ce91ca0489e81626ba6ff612055" Name="Diagram1">
+        <EntityTypeShape EntityType="ConstruccionSoftw.ClientType" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.Company" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.ContactType" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.Deparment" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.Person" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_People_ClientType" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_People_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_People_ContactType" ManuallyRouted="false" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_People_Deparment" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.Permission" Width="1.5" PointX="5.25" PointY="10.625" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.Restriction" Width="1.5" PointX="5.25" PointY="7.625" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.User" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.UserPermission" Width="1.5" PointX="7.5" PointY="3.75" />
+        <EntityTypeShape EntityType="ConstruccionSoftw.UserRestriction" Width="1.5" PointX="7.5" PointY="0.75" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_User_People" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_UserPermission_Permission" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_UserRestriction_Restriction" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_UserPermission_User" />
+        <AssociationConnector Association="ConstruccionSoftw.FK_UserRestriction_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
